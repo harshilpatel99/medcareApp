@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+
+            >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/userinfo"
+      >
+        <android.support.v7.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/image_asset"
+            app:cardCornerRadius="30dp"
+            android:layout_centerVertical="true"
+            >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/profile_pic"
+            android:scaleType="centerCrop"
+            android:src="@drawable/edited3"
+
+            android:layout_centerVertical="true"/>
+        </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="6dp"
+            android:padding="4dp"
+
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/image_asset">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Patient name"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:drawablePadding="6dp"
+            android:textSize="16dp"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:id="@+id/patientname"
+            android:inputType="text"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_person"
+          />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Your location"
+           android:padding="4dp"
+            android:drawablePadding="6dp"
+            android:textSize="16dp"
+            android:textColorHint="#ffffff"
+            android:layout_below="@id/patientname"
+            android:textColor="#ffffff"
+            android:id="@+id/patientlocation"
+            android:inputType="text"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_location"
+
+            />
+        </LinearLayout>
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:padding="14dp"
+                android:id="@+id/sc"
+                android:visibility="visible"
+                android:background="@drawable/profile_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="6dp"
+                    android:id="@+id/symptominput"
+                    android:visibility="visible"
+                   >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Symptoms Check"
+                        android:layout_gravity="center"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"
+                        android:drawableLeft="@drawable/ic_stethoscope"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/colorAccent"
+                        android:id="@+id/head1"
+                        android:textColor="@color/colorAccent"
+                        />
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Symptom 1"
+                        android:padding="12dp"
+                        android:textSize="14dp"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/symptom1"
+                        android:drawableLeft="@drawable/ic_syringe"
+                        android:drawableTint="#808080"
+                        android:drawablePadding="8dp"/>
+
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Symptom 2"
+                        android:padding="12dp"
+                        android:textSize="14dp"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/symptom2"
+                        android:drawableLeft="@drawable/ic_syringe"
+                        android:drawableTint="#808080"
+                        android:drawablePadding="8dp"/>
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Symptom 3"
+                        android:padding="12dp"
+                        android:textSize="14dp"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/symptom3"
+                        android:drawableLeft="@drawable/ic_syringe"
+                        android:drawableTint="#808080"
+                        android:drawablePadding="8dp"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Diagnose"
+                        android:id="@+id/go"
+                        android:drawableRight="@drawable/ic_arrow_forward"
+                        android:drawableTint="#ffffff"
+                        android:elevation="8dp"
+                        android:paddingRight="6dp"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/button_bg"/>
+
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/symptominput"
+                    android:layout_centerHorizontal="true"
+                    android:progress="80"
+                    android:visibility="gone"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="24dp"
+                    android:id="@+id/output"
+                    android:layout_below="@id/symptominput"
+                    android:scrollbars="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diagnosed Report"
+                        android:layout_gravity="center"
+                        android:textSize="16dp"
+                        android:layout_margin="12dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"
+                        android:drawableLeft="@drawable/ic_results"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/colorAccent"
+                        android:id="@+id/head2"
+                        android:textColor="@color/colorAccent"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expected Disease: "
+                        android:textSize="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="#414a4c"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/disease_text"
+                        android:textColor="#414a4c"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:padding="14dp"
+                android:id="@+id/hc"
+                android:visibility="visible"
+                android:background="@drawable/profile_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="6dp"
+                android:id="@+id/hospitalcheck"
+                android:visibility="visible"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hospitals Nearby"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@drawable/ic_hospital_buildings"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:id="@+id/head3"
+                    android:textColor="@color/colorAccent"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hospitals"
+                    android:gravity="center_horizontal"
+                    android:padding="12dp"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/hresult"/>
+
+            </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

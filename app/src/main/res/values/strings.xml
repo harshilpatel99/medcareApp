@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Medcare</string>
+    <string name="sc">Symptoms check</string>
+    <string name="hn">Nearby Hospitals</string>
+</resources>

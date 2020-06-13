@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_explore"
+        android:icon="@drawable/ic_books"
+        android:title="Explore"/>
+    <item
+        android:id="@+id/nav_appointments"
+        android:icon="@drawable/ic_list"
+        android:title="Appointments"/>
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_stethoscope"
+        android:title="Diagnose"
+        />
+    <item
+        android:id="@+id/nav_doctors"
+        android:icon="@drawable/ic_doctor"
+        android:title="Doctors"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_resume"
+        android:title="Profile"/>
+</menu>

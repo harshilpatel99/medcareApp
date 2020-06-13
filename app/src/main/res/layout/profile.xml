@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="8dp"
+        android:padding="14dp"
+        android:background="@drawable/profile_bg">
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_spinner"></Spinner>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@drawable/ic_add"
+            android:id="@+id/add_new"
+            android:tint="@color/colorAccent"
+          />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@drawable/ic_edit"
+            android:id="@+id/editinfo"
+            android:layout_marginLeft="12dp"
+            android:tint="@color/colorAccent" />
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/image_asset"
+            app:cardCornerRadius="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/profile_pic"
+                android:scaleType="centerCrop"
+                android:src="@drawable/edited3"
+
+                android:layout_centerVertical="true"/>
+        </android.support.v7.widget.CardView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_asset"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/patient_info">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Name"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/p_name"
+                android:textColor="#414a4c"
+                android:textSize="16dp"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:id="@+id/p_location"
+                android:layout_below="@id/p_name"
+                android:layout_centerHorizontal="true"
+                android:textSize="14dp"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawableTint="#808080"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p_location"
+                android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medcare ID:  "
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A-2468"
+                android:textSize="14dp"
+                android:id="@+id/pid"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:background="#808080"
+            android:id="@+id/part1"
+            android:layout_below="@id/patient_info"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/part1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical History"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/medical_history"
+                android:gravity="center"
+                android:textColor="#414a4c"
+                android:layout_marginBottom="14dp"
+                android:textSize="16dp"
+                android:drawableLeft="@drawable/ic_list"
+                android:drawableTint="#414a4c"
+                android:drawablePadding="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_mh"
+                android:layout_below="@id/medical_history"
+                android:textSize="14dp"
+                android:text="KEYNOTE ON BLOCKCHAIN
+EVENT PLAN
+
+TENTATIVE DATE FOR THE EVENT:
+Between 5th-10th August
+
+PLACE:
+GCET Auditorium
+
+TIME:
+Approx. 4-5hrs.
+
+EXPERT SPEAKER:(any one)
+1.
+2.
+3.
+
+TOPICS TO BE COVERED:
+1. What is blockchain technology and how does it works?
+2. What does Blockchain do?
+3. What is the use of blockchain?
+4. Concept of blockchain in banking
+5. Followed by hands-on on how to mine bitcoin and other practical           purposes where blockchain is used.
+
+TARGETED AUDIENCE:
+As this is a most general topic, our audience can be from any technical field from 1st-4th year. The approx. count of audience will be of around 100-150.
+Participants will be also targeted from outside the college also.
+
+EVENT FEES:
+For CSI members: Rs. 50
+For non-CSI members: Rs 70
+
+THINGS TO BE PROVIDED TO THE PARTICIPANTS
+1. Breakfast
+2. Certificate of participation
+
+
+
+
+
+
+"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

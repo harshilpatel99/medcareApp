@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "366306185205",
+    "firebase_url": "https://medcare-c5dcb.firebaseio.com",
+    "project_id": "medcare-c5dcb",
+    "storage_bucket": "medcare-c5dcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366306185205:android:9b77b1d637bd4c02",
+        "android_client_info": {
+          "package_name": "com.hurdle.medcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366306185205-giggaa7qlikfr5q5k548uq7f5otcheqk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hurdle.medcare",
+            "certificate_hash": "76f8a20d0f08570930dbfe87de3a1305fd9c3bbe"
+          }
+        },
+        {
+          "client_id": "366306185205-s6a6redhfmfcl5536rbgb0vd87jp4dhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Q806HsDvd1oDQXe3J9TLz7KHr4A6kRU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366306185205-s6a6redhfmfcl5536rbgb0vd87jp4dhb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
